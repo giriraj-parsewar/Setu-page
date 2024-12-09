@@ -1,0 +1,421 @@
+/* MAIN FICTOAN STYLES ====================================================== */
+@import "fictoan-react/dist/index.css";
+
+/* FONTS ==================================================================== */
+@import "./fonts.css";
+
+
+/* GLOBAL RULES ///////////////////////////////////////////////////////////// */
+
+body{
+background-color: black;
+}
+
+:root {
+ 
+  /* LINKS ================================================================ */
+--link-font : var(--paragraph-font);
+--link-text-default : var(--gray-light20);
+--link-text-hover : var(--teal-light20);
+    /* Buttons ///////////////////////////////////////////////////////////// */
+    --button-primary-bg-default             : var(--teal-dark10);
+    --button-primary-text-default           : var(--white);
+    --button-primary-border-default         : var(--teal-light20);
+    --button-primary-border-width-default   : var(--global-border-width);
+    --button-primary-border-radius-default  : 7px;
+    --button-primary-bg-hover               : var(--teal-light20);
+    --button-primary-text-hover             : var(--white);
+    --button-primary-border-hover           : var(--teal-light20);
+    --button-primary-border-width-hover     : var(--global-border-width);
+    --button-primary-border-radius-hover    : var(--global-border-radius);
+    --button-primary-spinner-loading        : var(--white);
+    --button-primary-bg-disabled            : var(--teal-light20);
+    --button-primary-text-disabled          : var(--white);
+    --button-primary-border-disabled        : var(--teal-light20);
+    --button-primary-border-width-disabled  : var(--global-border-width);
+    --button-primary-border-radius-disabled : var(--global-border-radius);
+      }
+      
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 0 0% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 3.9%;
+        --primary: 168 100% 42%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 0 0% 96.1%;
+        --secondary-foreground: 0 0% 9%;
+        --muted: 0 0% 96.1%;
+        --muted-foreground: 0 0% 45.1%;
+        --accent: 0 0% 96.1%;
+        --accent-foreground: 0 0% 9%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 89.8%;
+        --input: 0 0% 89.8%;
+        --ring: 168 100% 42%;
+        --radius: 0.5rem;
+    
+        /* CARD ///////////////////////////////////////////////////////////////////// */
+    --card-bg : var(--white);
+    --card-border : var(--slate);
+    --card-border-radius : var(--global-border-radius);
+    --card-border-width : var(--global-border-width);
+    
+      }
+      
+      .theme-dark {
+        --background: 0 0% 0%;
+        --foreground: 0 0% 100%;
+        --card: 0 0% 3%;
+        --card-foreground: 0 0% 100%;
+        --popover: 0 0% 3%;
+        --popover-foreground: 0 0% 100%;
+        --primary: 168 100% 42%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 0 0% 13%;
+        --secondary-foreground: 0 0% 100%;
+        --muted: 0 0% 13%;
+        --muted-foreground: 0 0% 63%;
+        --accent: 0 0% 13%;
+        --accent-foreground: 0 0% 100%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 0 0% 13%;
+        --input: 0 0% 13%;
+        --ring: 168 100% 42%;
+      }
+    /* Light Theme =============================================================== */
+    .theme-light {
+        --font-sans-serif: "IBM Plex Sans", sans-serif;
+        --font-serif: "IBM Plex Serif", serif;
+        --font-mono: "IBM Plex Mono", monospace;
+      
+        --body-bg: white;
+        --text-color: #333;
+        --header-bg: #f9f9f9;
+        --header-text-color: #333;
+        --card-bg: #ffffff;
+        --card-border-color: #eaeaea;
+      }
+  
+  .hero{
+    display: flex; 
+padding-top: 6rem;
+padding-bottom: 6rem; 
+flex-direction: column; 
+justify-content: center; 
+align-items: center; 
+  }
+
+
+  
+
+p{ margin: 2% 0% 0% 0%;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    @media (min-width: 640px) {
+      font-size: 1.25rem;}
+
+}
+
+.hero-buttonsdiv{
+    display: flex; 
+margin-top: 2rem; 
+flex-wrap: wrap; 
+gap: 1rem; 
+justify-content: center; 
+
+
+}    
+
+.container{
+flex-wrap: wrap; 
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+max-width: 1200px;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+}
+
+.features {
+  padding: 4rem 0;
+  background-color: #121212; /* Dark background color */
+}
+
+
+  
+
+.features-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.features-div {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 1.5rem;
+}
+
+.features-card {
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #000000; 
+  color: #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.feature-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #00d4a4;
+}
+
+.feature-title {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: #ccc; 
+}
+
+section{
+    padding: 100px;
+   background-color: #00d4a4;
+}
+
+/* Benefits Section Styles */
+.benefits-section {
+  padding: 4rem 0; 
+  background-color: #000000; 
+  color: white;
+}
+
+.benefit-container {
+  max-width: 1200px; /* Centered content */
+  margin: 0 auto;
+  padding: 0 1rem; 
+}
+
+.benefits-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  gap: 1.5rem; /* Spacing between cards */
+}
+
+.benefits-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #000000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefits-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+}
+
+.benefit-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #00d4a4; 
+  flex-shrink: 0;
+}
+
+.benefit-text {
+  font-size: 1rem;
+  color: white;
+}
+
+
+
+.header {
+  margin: 0% 2% 0% 0%;
+  position: sticky;
+  background-color: black;
+  top: 0;
+  z-index: 50;
+  border-bottom-width: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #ccc 0.01px solid;
+  padding: 0 10px;
+}
+
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+}
+
+.navbar-ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex; 
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 10px ;
+}
+
+.navbar-li {
+  margin-right: 20px;
+}
+
+.last-navbar{
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) { 
+  .navbar-ul {
+    justify-content: space-around;
+    width: 100%; 
+    flex-wrap: nowrap;
+  }
+
+  .navbar-li {
+    margin-right: 0;
+    text-align: center; 
+    width: auto; 
+  }
+
+  .header {
+    padding: 0 10px; 
+  }
+}
+
+
+
+/* Footer Styles */
+.site-footer {
+  background-color: #121212; 
+  padding: 2rem 0;
+  color: #fff;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.footer-logo {
+  text-align: center;
+}
+
+.logo {
+  margin-left: 10px;
+  color: #00d4a4;
+  text-decoration: none;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  color: #00d4a4;
+}
+
+.footer-tagline {
+  font-size: 1rem;
+  color: #ccc;
+  margin-top: 0.5rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-link {
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #00d4a4;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-link {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #00d4a4;
+}
+
+.social-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+

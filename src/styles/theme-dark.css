@@ -1,0 +1,14 @@
+  /* Dark Theme ================================================================ */
+  .theme-dark {
+    --font-sans-serif: "IBM Plex Sans", sans-serif;
+    --font-serif: "IBM Plex Serif", serif;
+    --font-mono: "IBM Plex Mono", monospace;
+  
+    --body-bg: black;
+    --text-color: #f9f9f9;
+    --link-color: #79b8ff;
+    --header-bg: #1a1a1a;
+    --header-text-color: #f9f9f9;
+    --card-bg: #2a2a2a;
+    --card-border-color: #444;
+  }
