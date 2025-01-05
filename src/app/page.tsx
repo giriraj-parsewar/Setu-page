@@ -32,7 +32,7 @@ const features = [
 
 
 const benefits = [
-  "Gain a clear understanding of your financial health",
+  "Gain a clear understanding of your financial health in shortest time",
   "Identify areas for improvement in your finances",
   "Receive personalized strategies to achieve your financial goals",
   "Track your progress over time with real-time updates",
