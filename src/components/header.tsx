@@ -20,48 +20,32 @@ export const Header = () => {
 
   
 
-  return (
-    <Element as="header" className="header">
-    <Element
-        as="div"
-        className="header-div"
-    >
-        <Element as="div" >
-            <Heading3 href="/" className="logo">
-                SETU
-            </Heading3>
-        </Element>
-        <Element as="ul" className="navbar-ul" >
-            <Element as="li" className="navbar-li">
-                <Link  href="/">
-                    Home
-                </Link>
-            </Element>
-            <Element as="li" className="navbar-li">
-                <Link  href="#features">
-                    Features
-                </Link>
-            </Element>
-            <Element as="li" className="navbar-li">
-                <Link href="#benefits" >
-                Benefits
-                </Link>
-            </Element>
-            <Element as="li" className="navbar-li">
-                <Link  href="#footer">
-                    Contact
-                </Link>
-            </Element>
-            
-            <Button kind="primary" href="/signup" className="last-navbar">
-                Get Started
-            </Button>
-           
-        </Element>
-            
-           
-           
-    </Element>
-</Element>
+return (
+    <header className="header">
+        <Div className="header-div">
+            <Div>
+                <Heading3 href="/" className="logo">
+                    SETU
+                </Heading3>
+            </Div>
+            <ul className="navbar-ul">
+                <li className="navbar-li">
+                    <Link href="/">Home</Link>
+                </li>
+                <li className="navbar-li">
+                    <Link href="#features">Features</Link>
+                </li>
+                <li className="navbar-li">
+                    <Link href="#benefits">Benefits</Link>
+                </li>
+                <li className="navbar-li">
+                    <Link href="#footer">Contact</Link>
+                </li>
+                <Button kind="primary" href="/signup" className="last-navbar">
+                    Get Started
+                </Button>
+            </ul>
+        </Div>
+    </header>
 );
 };
