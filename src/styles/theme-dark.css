@@ -1,14 +1,32 @@
-  /* Dark Theme ================================================================ */
-  .theme-dark {
+.theme-dark {
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  --card: 0 0% 3%;
+  --card-foreground: 0 0% 100%;
+  --popover: 0 0% 3%;
+  --popover-foreground: 0 0% 100%;
+  --primary: 168 100% 42%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 13%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 0 0% 13%;
+  --muted-foreground: 0 0% 63%;
+  --accent: 0 0% 13%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 13%;
+  --input: 0 0% 13%;
+  --ring: 168 100% 42%;
     --font-sans-serif: "IBM Plex Sans", sans-serif;
     --font-serif: "IBM Plex Serif", serif;
     --font-mono: "IBM Plex Mono", monospace;
   
-    --body-bg: black;
-    --text-color: #f9f9f9;
-    --link-color: #79b8ff;
-    --header-bg: #1a1a1a;
-    --header-text-color: #f9f9f9;
-    --card-bg: #2a2a2a;
-    --card-border-color: #444;
-  }
+    --body-bg: rgb(0, 0, 0);
+    --text-color:white;
+    --header-bg: #292626;
+    --header-text-color: white;
+    --card-bg: #000000;
+    --card-border-color: #514f4f;
+    --features-bg: #121212;
+}

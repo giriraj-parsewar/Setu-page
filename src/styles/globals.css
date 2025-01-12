@@ -1,12 +1,15 @@
 /* MAIN FICTOAN STYLES ====================================================== */
 @import "fictoan-react/dist/index.css";
 
+  /* THEMES =================================================================== */
+  @import "./theme-light.css";
+  @import "./theme-dark.css";
 
 
 /* GLOBAL RULES ///////////////////////////////////////////////////////////// */
 
-body{
-background-color: black;
+body {
+  background-color: var(--body-bg);
 }
 
 :root {
@@ -62,40 +65,7 @@ background-color: black;
     
       }
       
-      .theme-dark {
-        --background: 0 0% 0%;
-        --foreground: 0 0% 100%;
-        --card: 0 0% 3%;
-        --card-foreground: 0 0% 100%;
-        --popover: 0 0% 3%;
-        --popover-foreground: 0 0% 100%;
-        --primary: 168 100% 42%;
-        --primary-foreground: 0 0% 100%;
-        --secondary: 0 0% 13%;
-        --secondary-foreground: 0 0% 100%;
-        --muted: 0 0% 13%;
-        --muted-foreground: 0 0% 63%;
-        --accent: 0 0% 13%;
-        --accent-foreground: 0 0% 100%;
-        --destructive: 0 62.8% 30.6%;
-        --destructive-foreground: 0 0% 100%;
-        --border: 0 0% 13%;
-        --input: 0 0% 13%;
-        --ring: 168 100% 42%;
-      }
-    /* Light Theme =============================================================== */
-    .theme-light {
-        --font-sans-serif: "IBM Plex Sans", sans-serif;
-        --font-serif: "IBM Plex Serif", serif;
-        --font-mono: "IBM Plex Mono", monospace;
-      
-        --body-bg: white;
-        --text-color: #333;
-        --header-bg: #f9f9f9;
-        --header-text-color: #333;
-        --card-bg: #ffffff;
-        --card-border-color: #eaeaea;
-      }
+     
   
   .hero{
     display: flex; 
@@ -145,11 +115,11 @@ max-width: 1200px;
 
 .features {
   padding: 4rem 0;
-  background-color: #121212; /* Dark background color */
+  background-color: var(--features-bg);
 }
 
 
-  
+
 
 .features-heading {
   font-size: 2rem;
@@ -167,9 +137,7 @@ max-width: 1200px;
 .features-card {
   padding: 2rem;
   text-align: center;
-  border-radius: 8px;
-  background-color: #000000; 
-  color: #ccc;
+  border-radius: 8px; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -194,7 +162,6 @@ max-width: 1200px;
 }
 
 .feature-title {
-  color: #ffffff;
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -202,19 +169,15 @@ max-width: 1200px;
 
 .feature-description {
   font-size: 1rem;
-  color: #ccc; 
 }
 
 section{
     padding: 100px;
-   background-color: #00d4a4;
 }
 
 /* Benefits Section Styles */
 .benefits-section {
   padding: 4rem 0; 
-  background-color: #000000; 
-  color: white;
 }
 
 .benefit-container {
@@ -228,7 +191,6 @@ section{
   font-weight: bold;
   margin-bottom: 2rem;
   text-align: center;
-  color: white;
 }
 
 .benefits-grid {
@@ -244,7 +206,6 @@ section{
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #000000;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -268,7 +229,6 @@ section{
 
 .benefit-text {
   font-size: 1rem;
-  color: white;
 }
 
 
@@ -276,7 +236,6 @@ section{
 .header {
   margin: 0% 2% 0% 0%;
   position: sticky;
-  background-color: black;
   top: 0;
   z-index: 50;
   border-bottom-width: 10px;
@@ -334,9 +293,7 @@ section{
 
 /* Footer Styles */
 .site-footer {
-  background-color: #121212; 
   padding: 2rem 0;
-  color: #fff;
 }
 
 .footer-container {
@@ -366,7 +323,6 @@ section{
 
 .footer-tagline {
   font-size: 1rem;
-  color: #ccc;
   margin-top: 0.5rem;
 }
 
@@ -381,7 +337,6 @@ section{
   text-decoration: none;
   font-size: 0.875rem;
   font-weight: 500;
-  color: #ccc;
   transition: color 0.3s ease;
 }
 
@@ -396,7 +351,6 @@ section{
 }
 
 .social-link {
-  color: #fff;
   transition: color 0.3s ease;
 }
 
@@ -416,4 +370,6 @@ section{
   text-align: center;
 }
 
-
+.cta-section{
+  background-color: #00d4a4;
+}

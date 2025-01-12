@@ -43,8 +43,8 @@ const SetusLandingPage = () => {
     return (
         <article id="page-setus">
             <Div id="hero" className="hero">
-                <h1 className="text-white">Personal Finance Health AI</h1>
-                <p className="p">Empower your financial decisions with AI-driven insights and personalized recommendations.</p>
+                <h1>Personal Finance Health AI</h1>
+                <p >Empower your financial decisions with AI-driven insights and personalized recommendations.</p>
                 <Div className="hero-buttonsdiv">
                     <Button size="medium" shape="rounded" kind="primary" horizontalMargin="nano">
                         Start Your Assessment
@@ -57,7 +57,7 @@ const SetusLandingPage = () => {
 
             <Div id="features" className="features">
                 <Div className="container">
-                    <h1 className="text-white features-heading">Key Features</h1>
+                    <h1 className="features-heading">Key Features</h1>
                     <Div className="features-div">
                         {features.map((feature, index) => (
                             <Card bgColor="black" key={index} className="features-card">
@@ -72,12 +72,12 @@ const SetusLandingPage = () => {
                 </Div>
             </Div>
 
-            <section id="benefits" className="benefits-section">
+            <Section id="benefits"className="benefits-section">
                 <Div className="benefit-container">
                     <h1 className="benefits-heading">Benefits of Using Our AI</h1>
                     <Div className="benefits-grid">
                         {benefits.map((benefit, index) => (
-                            <Card key={index} bgColor="white" className="benefits-card">
+                            <Card bgColor="black" key={index} className="benefits-card">
                                 <Div className="benefit-content">
                                     <CheckCircle className="benefit-icon" />
                                     <p className="benefit-text">{benefit}</p>
@@ -86,12 +86,12 @@ const SetusLandingPage = () => {
                         ))}
                     </Div>
                 </Div>
-            </section>
+            </Section>
 
-            <Section>
+            <Section className="cta-section">
                 <Div className="container">
-                    <Heading2 className="text-white">Ready to Improve Your Financial Health?</Heading2>
-                    <p className="text-white">
+                    <Heading2>Ready to Improve Your Financial Health?</Heading2>
+                    <p>
                         Start your journey towards financial wellness with our AI-powered assessment tool.
                     </p>
                     <Button shape="rounded" size="medium" className="hero-buttonsdiv" textColor="teal-dark10">

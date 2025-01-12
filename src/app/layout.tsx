@@ -16,8 +16,8 @@ import "@/styles/globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Personal Finance Health AI",
-  description: "NextJS boilerplate for React using Fictoan Framework",
+  title: "Setu",
+  description: "MY IMPLEMETATION OF SETU",
 };
 
 export default function RootLayout({
@@ -25,16 +25,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const listOfThemes = ["theme-light", "theme-dark"];
+
   return (
     <html lang="en">
-      
       <body>
-      <Header />
-        <ThemeProvider currentTheme="theme-dark">
-         
-
-          {children}
-        </ThemeProvider>
+      <ThemeProvider currentTheme="theme-dark">
+  <Header />
+  {children}
+</ThemeProvider>
       </body>
     </html>
   );

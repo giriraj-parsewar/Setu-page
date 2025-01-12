@@ -1,0 +1,13 @@
+.theme-light {
+  --font-sans-serif: "IBM Plex Sans", sans-serif;
+  --font-serif: "IBM Plex Serif", serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  --body-bg: white;
+  --text-color: black;
+  --header-bg: #f9f9f9;
+  --header-text-color: #000000;
+  --card-bg: #ffffff;
+  --card-border-color: #eaeaea;
+  --features-bg: #7f7b7bd7;
+}
